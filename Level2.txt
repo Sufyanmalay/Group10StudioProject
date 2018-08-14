@@ -1,0 +1,18 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+x             x           x            x
+x             x           x            x
+x             x           x            x   
+x      y      x    P2     x     P3     x   
+x             x           x            x   
+xxxx---d1---xxxxx--d1--xxxxxxx--d2--xxxx  
+                                       |   
+                                       P4 
+                                       |  
+xxxx        xxxxx--d3--xxxxxxx--d3--xxxx  
+x             x           x            x
+x             x           x            x 
+x       y     x           x            x
+x             x           x            x
+x      P1     x    P2     x      P4    x
+x             x           x            x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

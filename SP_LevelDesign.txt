@@ -1,0 +1,89 @@
+Level Layout
+Start from left to right
+
+==========================================================================================================
+
+Level 1: Switches. Player will have to go through various switches to open specific doors all the way to the end.
+Some switches does nothing.
+
+Legend:
+
+	x = walls
+	o(number) = switch number
+	d(number) = door number
+	---d(number)--- = length of door
+
+(First version with no fake switches)
+  ########################################
+  #             #        #      o3       #
+  #      o5     #        #               |
+  #             #                        |   E
+  #             #                        d5  N
+  #             #        #               |   D
+  #             #        #               # 
+S ####---d4---###        #################  
+T                                        #
+A                                  o2    # 
+R                                        #
+T ####        ############################
+  #                  |   |   |           # 
+  # o1               |   |   |           #
+  #                  d1  d2  d3    o4    #
+  #                  |   |   |           #
+  #                  |   |   |           #
+  #		     |   |   |           #
+  ########################################
+	
+
+==========================================================================================================
+
+Level 2: Blocks & Pressure plates. Player needs to push blocks onto pressure plate to make the door open for a
+longer period of time.
+
+Legend:
+	O(number) = Pressure plate
+	y = Block to put on pressure plate
+	---d1(number)--- = length of door
+
+   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   x             x           x            x
+   x             x           x            x
+   x             x           x            x   
+   x      y      x    P2     x     P3     x   
+   x             x           x            x   
+S  xxxx---d1---xxxxx--d1--xxxxxxx--d2--xxxx  
+T                                         |  E 
+A                                         P4 N
+R                                         |  D
+T  xxxx        xxxxx--d3--xxxxxxx--d3--xxxx  
+   x             x           x            x
+   x             x           x            x 
+   x       y     x           x            x
+   x             x           x            x
+   x      P1     x    P2     x      P4    x
+   x             x           x            x
+   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+==========================================================================================================
+
+Level 3: Monsters roaming. Player has to navigate through carefully as there are monsters walking in a fixed
+direction.
+
+   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   x   M        ^           x             x
+   x   v        M           x             x
+   xxxxx<-M->xxxxxx         x             x   
+   x              x         x             x   
+   x              x         x             x   
+   x<--------M--->x <--m--> x   xxxxxxxxxxx  
+   xxxxxxxxx      x         x   x             E 
+           x<--M->x         x   x             N
+           x      x <--m--> x   x             D
+           x      x         x   x         x  
+   xxxxxxxxx<-M-->x         x   x  <-M->  x
+ S    ^    ^      x <--m--> x   x         x 
+ T    |    |      x         xxxxx  <-M->  x
+ A    M    M      x            ^          x
+ R    |    |      x            M          x
+ T    v    v      x            v          x
+   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
